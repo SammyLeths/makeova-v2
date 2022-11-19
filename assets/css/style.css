@@ -11505,7 +11505,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .bottom-cta__email {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -11515,8 +11515,8 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .footer {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .footer .lead {
