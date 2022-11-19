@@ -96,7 +96,8 @@
   transition: all 0.5s;
 }
 
-.hidden {
+.mb-hidden {
+  display: none;
   visibility: hidden;
   opacity: 0;
 }

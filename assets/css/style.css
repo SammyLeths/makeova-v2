@@ -10969,7 +10969,8 @@ textarea.form-control-lg {
   transition: all 0.5s;
 }
 
-.hidden {
+.mb-hidden {
+  display: none;
   visibility: hidden;
   opacity: 0;
 }
@@ -11101,8 +11102,8 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .hero {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (max-width: 991.98px) {
@@ -11182,8 +11183,8 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .process {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .process__headline-wrapper {
@@ -11214,8 +11215,8 @@ textarea.form-control-lg {
 }
 @media (max-width: 575.98px) {
   .testimonial {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .testimonial__featured {
@@ -11459,8 +11460,8 @@ textarea.form-control-lg {
 
 @media (max-width: 575.98px) {
   .bottom-cta {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 .bottom-cta .display-4 {

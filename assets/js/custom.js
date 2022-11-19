@@ -1,3 +1,5 @@
+'use-strict';
+
 ///////////////////////////////////////////////
 // MODAL
 
@@ -10,20 +12,20 @@ const openModal = function (e) {
   e.preventDefault();
   let modal = e.target.id;
   selectedModal = document.querySelector(`.${modal}`);
-  selectedModal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
+  selectedModal.classList.remove('mb-hidden');
+  overlay.classList.remove('mb-hidden');
 };
 
 const closeModal = function (e) {
   let modal = e.target.id;
   selectedModal = document.querySelector(`.${modal}`);
-  selectedModal.classList.add('hidden');
-  overlay.classList.add('hidden');
+  selectedModal.classList.add('mb-hidden');
+  overlay.classList.add('mb-hidden');
 };
 
 const closeAllModals = function () {
-  allModals.forEach((modal) => modal.classList.add('hidden'));
-  overlay.classList.add('hidden');
+  allModals.forEach((modal) => modal.classList.add('mb-hidden'));
+  overlay.classList.add('mb-hidden');
 };
 
 btnsOpenModal.forEach((btn) => btn.addEventListener('click', openModal));
@@ -32,7 +34,7 @@ overlay.addEventListener('click', closeAllModals);
 
 document.addEventListener('keydown', function (e) {
   allModals.forEach((modal) => {
-    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+    if (e.key === 'Escape' && !modal.classList.contains('mb-hidden')) {
       closeAllModals();
     }
   });
