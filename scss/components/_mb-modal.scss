@@ -72,6 +72,14 @@
         border-radius: 0;
       }
     }
+
+    form {
+      input,
+      select,
+      textarea {
+        border-radius: 0;
+      }
+    }
   }
 }
 

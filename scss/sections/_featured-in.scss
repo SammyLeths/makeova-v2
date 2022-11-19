@@ -3,6 +3,10 @@
 .featured-in {
   background-color: $green-100;
 
+  @include media-breakpoint-down(lg) {
+    padding-bottom: 1rem;
+  }
+
   &__company-logo-wrapper {
     height: 4.8rem;
     margin-bottom: 2rem;

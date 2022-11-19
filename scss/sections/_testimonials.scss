@@ -3,6 +3,11 @@
 .testimonial {
   padding: 0 0 5rem 0;
 
+  @include media-breakpoint-down(sm) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   &__featured {
     margin-top: -5rem;
 

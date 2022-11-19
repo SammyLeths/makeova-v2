@@ -3,6 +3,11 @@
 .process {
   padding: 7rem 0 10rem 0;
 
+  @include media-breakpoint-down(sm) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
   &__headline-wrapper {
     width: 70%;
 

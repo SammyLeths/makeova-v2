@@ -63,14 +63,25 @@
 
   <!-- START THE HERO SECTION -->
 
-  <section class="hero" id="home">
+  <section class="hero section" id="home">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-lg-6 my-auto hero__intros pt-5">
           <h1 class="display-2">Renovations simplified.</h1>
           <p class="display-2--description">A stramlined platform to design, plan, and build - all in one place
           </p>
-          <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Get your estimates</button>
+          <div class="hero__intros--ctas d-flex align-items-center">
+            <button class="btn-flat btn-sm btn--show-modal" id="get-estimate">Get your estimates</button>
+            <div class="video-box">
+              <a href="#" class="glightbox">
+                <span>
+                  <i class="fas fa-play-circle"></i>
+                </span>
+                <span class="border-animation border-animation--border-1"></span>
+                <span class="border-animation border-animation--border-2"></span>
+              </a>
+            </div>
+          </div>
         </div>
         <div class="col-sm-12 col-lg-6">
           <img src="images/hero/hero-image-1.png" alt="hero 1" class="hero--image1 img-fluid">
@@ -82,7 +93,7 @@
 
   <!-- START THE FEATURED IN SECTION -->
 
-  <section class="featured-in px-3 px-md-0" id="featured-in">
+  <section class="featured-in px-3 px-md-0 section" id="featured-in">
     <div class="container">
       <div class="row text-center py-5">
         <div class="col-sm-6 col-lg-3 mb-xl-0 mb-5">
@@ -125,7 +136,7 @@
 
   <!-- START THE PROCESS SECTION -->
 
-  <section class="process bg-primary" id="process">
+  <section class="process bg-primary section" id="process">
     <div class="container">
       <div class="row mb-5">
         <div class="col-md-6">
@@ -193,7 +204,7 @@
 
   <!-- START THE TESTIMONIAL SECTION -->
 
-  <section class="testimonial bg-white" id="testimonial">
+  <section class="testimonial bg-white section" id="testimonial">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -277,7 +288,7 @@
 
   <!-- START THE TESTIMONIAL SECTION -->
 
-  <section class="middle-cta" id="middle-cta">
+  <section class="middle-cta section" id="middle-cta">
     <div class="container">
       <div class="row text-center">
         <div class="col-m-12">
@@ -292,7 +303,7 @@
 
   <!-- START THE OPTIONS SECTION -->
 
-  <section class="options" id="options">
+  <section class="options section" id="options">
     <div class="container">
       <div class="row mb-5 text-center">
         <div class="col-md-12">
@@ -356,7 +367,7 @@
 
   <!-- START THE GALLERY SECTION -->
 
-  <section class="gallery" id="gallery">
+  <section class="gallery section" id="gallery">
     <div class="container">
       <div class="row gallery__wrapper">
         <div class="col-md-12 col-lg-6 order-2 order-lg-1">
@@ -596,6 +607,12 @@
     </div>
   </footer>
 
+  <!-- START THE BACK TO TOP BUTTON -->
+
+  <a href="#" class="shadow back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
   <!-- START THE MODAL SECTION FOR LOGIN / SIGNUP -->
 
   <div class="mb-modal hidden login-signup" id="login-signup-id">
@@ -735,6 +752,14 @@
     const lightboxGallery = GLightbox({
       selector: '.glightbox1'
     })
+
+    const lightbox = GLightbox({
+      'href': 'https://youtu.be/zFTbh21iIeY',
+      'type': 'video',
+      'source': 'youtube',
+      'width': 900,
+      'autoPlayVideos': 'true',
+    });
   </script>
 </body>
 
