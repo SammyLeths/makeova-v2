@@ -1,3 +1,43 @@
+///////////////////////////////////////////////
+// MODAL
+
+const allModals = document.querySelectorAll('.mb-modal');
+const overlay = document.querySelector('.overlay');
+const btnsCloseModal = document.querySelectorAll('.btn--close-modal');
+const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
+
+const openModal = function (e) {
+  e.preventDefault();
+  let modal = e.target.id;
+  selectedModal = document.querySelector(`.${modal}`);
+  selectedModal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModal = function (e) {
+  let modal = e.target.id;
+  selectedModal = document.querySelector(`.${modal}`);
+  selectedModal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+const closeAllModals = function () {
+  allModals.forEach((modal) => modal.classList.add('hidden'));
+  overlay.classList.add('hidden');
+};
+
+btnsOpenModal.forEach((btn) => btn.addEventListener('click', openModal));
+btnsCloseModal.forEach((btn) => btn.addEventListener('click', closeModal));
+overlay.addEventListener('click', closeAllModals);
+
+document.addEventListener('keydown', function (e) {
+  allModals.forEach((modal) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+      closeAllModals();
+    }
+  });
+});
+
 //////////////////////////////////////////////////
 // DETECT SCROLL AND ADD WHITE BG TO NAV
 
@@ -91,43 +131,3 @@ scroller.addEventListener('mousedown', initializeDrag);
 scroller.addEventListener('mousemove', handleDragging);
 scroller.addEventListener('mouseleave', deInitializeDrag);
 scroller.addEventListener('mouseup', deInitializeDrag);
-
-///////////////////////////////////////////////
-// MODAL
-
-const allModals = document.querySelectorAll('.mb-modal');
-const overlay = document.querySelector('.overlay');
-const btnsCloseModal = document.querySelectorAll('.btn--close-modal');
-const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
-
-const openModal = function (e) {
-  e.preventDefault();
-  let modal = e.target.id;
-  selectedModal = document.querySelector(`.${modal}`);
-  selectedModal.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-};
-
-const closeModal = function (e) {
-  let modal = e.target.id;
-  selectedModal = document.querySelector(`.${modal}`);
-  selectedModal.classList.add('hidden');
-  overlay.classList.add('hidden');
-};
-
-const closeAllModals = function () {
-  allModals.forEach((modal) => modal.classList.add('hidden'));
-  overlay.classList.add('hidden');
-};
-
-btnsOpenModal.forEach((btn) => btn.addEventListener('click', openModal));
-btnsCloseModal.forEach((btn) => btn.addEventListener('click', closeModal));
-overlay.addEventListener('click', closeAllModals);
-
-document.addEventListener('keydown', function (e) {
-  allModals.forEach((modal) => {
-    if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-      closeAllModals();
-    }
-  });
-});
