@@ -11,36 +11,31 @@
 
       .scroller {
         // XS DEVICES (575px down)
-        animation: infinite_vertical_scroll 20s infinite alternate linear both;
+        animation: infinite_vertical_scroll 20s infinite linear both;
 
         // SM DEVICES (576px up)
         @include media-breakpoint-up(sm) {
-          animation: infinite_vertical_scroll_sm 20s infinite alternate linear
-            both;
+          animation: infinite_vertical_scroll_sm 20s infinite linear both;
         }
 
         // MD DEVICES (768px up)
         @include media-breakpoint-up(md) {
-          animation: infinite_vertical_scroll_md 20s infinite alternate linear
-            both;
+          animation: infinite_vertical_scroll_md 20s infinite linear both;
         }
 
         // LG DEVICES (992px up)
         @include media-breakpoint-up(lg) {
-          animation: infinite_vertical_scroll_lg 20s infinite alternate linear
-            both;
+          animation: infinite_vertical_scroll_lg 20s infinite linear both;
         }
 
         // XL DEVICES (1200px up)
         @include media-breakpoint-up(xl) {
-          animation: infinite_vertical_scroll_xl 20s infinite alternate linear
-            both;
+          animation: infinite_vertical_scroll_xl 20s infinite linear both;
         }
 
         // XXL DEVICES (1400px up)
         @include media-breakpoint-up(xxl) {
-          animation: infinite_vertical_scroll_xxl 20s infinite alternate linear
-            both;
+          animation: infinite_vertical_scroll_xxl 20s infinite linear both;
         }
       }
 

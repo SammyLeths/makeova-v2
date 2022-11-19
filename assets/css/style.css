@@ -11343,31 +11343,31 @@ textarea.form-control-lg {
   overflow: hidden;
 }
 .gallery__wrapper__images .scroller {
-  animation: infinite_vertical_scroll 20s infinite alternate linear both;
+  animation: infinite_vertical_scroll 20s infinite linear both;
 }
 @media (min-width: 576px) {
   .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_sm 20s infinite alternate linear both;
+    animation: infinite_vertical_scroll_sm 20s infinite linear both;
   }
 }
 @media (min-width: 768px) {
   .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_md 20s infinite alternate linear both;
+    animation: infinite_vertical_scroll_md 20s infinite linear both;
   }
 }
 @media (min-width: 992px) {
   .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_lg 20s infinite alternate linear both;
+    animation: infinite_vertical_scroll_lg 20s infinite linear both;
   }
 }
 @media (min-width: 1200px) {
   .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_xl 20s infinite alternate linear both;
+    animation: infinite_vertical_scroll_xl 20s infinite linear both;
   }
 }
 @media (min-width: 1400px) {
   .gallery__wrapper__images .scroller {
-    animation: infinite_vertical_scroll_xxl 20s infinite alternate linear both;
+    animation: infinite_vertical_scroll_xxl 20s infinite linear both;
   }
 }
 .gallery__wrapper__images__box {
