@@ -1,0 +1,10 @@
+@use '../custom' as *;
+
+@keyframes infinite_vertcal_scroll {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-65rem);
+  }
+}

@@ -1,0 +1,42 @@
+@use '../custom' as *;
+
+.btn-flat {
+  position: relative;
+  padding: 1.5rem 2rem;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  color: $white;
+  background-color: $primary;
+
+  &:hover {
+    background-color: $green-300;
+  }
+}
+
+.btn-sm {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.btn-flat-white {
+  color: $primary;
+  background-color: $white;
+}
+
+.btn-outline {
+  color: $primary;
+  border: 1px solid $primary;
+  background-color: transparent;
+  padding: 1rem 2rem;
+
+  &:hover {
+    color: rgba($primary, 0.5);
+    border-color: rgba($primary, 0.5);
+  }
+}
+
+.btn-outline--dark {
+  color: $dark;
+  border-color: $dark;
+}

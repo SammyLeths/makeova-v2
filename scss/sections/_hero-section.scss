@@ -1,0 +1,41 @@
+@use '../custom' as *;
+
+.hero {
+  padding-bottom: 6rem;
+  height: 100%;
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 0;
+  }
+
+  &__intros {
+    button {
+      @include media-breakpoint-down(lg) {
+        margin-bottom: 2.5rem;
+      }
+    }
+  }
+
+  &--image1 {
+    max-width: 25rem;
+    margin-top: -4.6rem;
+
+    @include media-breakpoint-down(lg) {
+      margin-top: 0;
+    }
+
+    @include media-breakpoint-down(sm) {
+      max-width: 18rem;
+    }
+  }
+
+  &--image2 {
+    position: relative;
+    max-width: 24rem;
+    margin-top: -10rem;
+
+    @include media-breakpoint-down(sm) {
+      max-width: 14rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use '../custom' as *;
+
+.featured-in {
+  background-color: $green-100;
+
+  &__company-logo-wrapper {
+    height: 4.8rem;
+    margin-bottom: 2rem;
+  }
+
+  &__company-text {
+    display: block;
+  }
+}

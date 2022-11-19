@@ -1,0 +1,39 @@
+@use '../custom' as *;
+
+.menu {
+  .container {
+  }
+
+  .navbar-brand,
+  .offcanvas-title {
+    font-size: 1.3rem;
+  }
+
+  li {
+    margin: 0 0.5rem;
+
+    a {
+      &:hover {
+        font-weight: 700;
+      }
+    }
+
+    .active {
+      font-weight: 700;
+      color: $primary !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+      margin: 0;
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  .navbar-right {
+    a {
+      &:hover {
+        font-weight: 700;
+      }
+    }
+  }
+}
