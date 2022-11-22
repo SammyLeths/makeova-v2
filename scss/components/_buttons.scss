@@ -7,11 +7,6 @@
   border: 0;
   border-radius: 0;
   color: $white;
-  background-color: $primary;
-
-  &:hover {
-    background-color: $green-300;
-  }
 }
 
 .btn-sm {
@@ -19,24 +14,33 @@
   padding: 1rem 2rem;
 }
 
-.btn-flat-white {
-  color: $primary;
-  background-color: $white;
-}
-
 .btn-outline {
-  color: $primary;
-  border: 1px solid $primary;
   background-color: transparent;
   padding: 1rem 2rem;
-
-  &:hover {
-    color: rgba($primary, 0.5);
-    border-color: rgba($primary, 0.5);
-  }
 }
 
 .btn-outline--dark {
   color: $dark;
   border-color: $dark;
+}
+
+// THEME SWITCHERS BUTTON
+
+.btn--theme-switcher {
+  border: none;
+  padding: 0.5rem 1rem;
+  color: $white;
+}
+
+.btn--theme-switcher.btnsm {
+  @include media-breakpoint-down(lg) {
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+.btn--color {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: none;
 }

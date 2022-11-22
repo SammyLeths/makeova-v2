@@ -2,11 +2,15 @@
 @use '../components/mixins' as *;
 
 .hero {
-  padding-bottom: 6rem;
   height: 100%;
+  margin-top: -4.6rem;
 
   @include media-breakpoint-down(lg) {
-    padding-top: 0;
+    margin-top: -4.7rem;
+  }
+
+  @include media-breakpoint-down(lg) {
+    padding-top: 4.7rem;
   }
 
   @include media-breakpoint-down(sm) {
@@ -18,9 +22,6 @@
     &--ctas {
       @include media-breakpoint-down(lg) {
         margin-bottom: 2.5rem;
-      }
-
-      button {
       }
 
       .video-box {
@@ -58,9 +59,12 @@
     }
   }
 
+  &__feat-images {
+    padding-bottom: 6rem;
+  }
+
   &--image1 {
     max-width: 25rem;
-    margin-top: -4.6rem;
     animation: hero_image_slide 0.8s ease-in-out;
 
     @include media-breakpoint-down(lg) {

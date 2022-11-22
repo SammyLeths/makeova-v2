@@ -49,13 +49,8 @@
   }
 
   &__btn {
-    color: $primary;
     border: none;
     font-size: 2rem;
     background-color: transparent;
-
-    &:hover {
-      color: rgba($primary, 0.5);
-    }
   }
 }

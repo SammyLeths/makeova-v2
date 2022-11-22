@@ -50,16 +50,10 @@
           font-weight: 700;
           border: none;
           border-radius: 0;
-          color: $dark;
-
-          &:hover {
-            background-color: $green-300;
-          }
         }
 
         .nav-link.active {
-          background-color: $white;
-          color: $primary;
+          background-color: $white !important;
         }
       }
     }
