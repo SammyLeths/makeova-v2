@@ -1,6 +1,6 @@
 {
-  "name": "makeova",
-  "version": "1.0.0",
+  "name": "makeova-v2",
+  "version": "2.0.0",
   "description": "responsive web template built with html, bootstrap v5.2, sass and npm",
   "main": "index.js",
   "scripts": {
